@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="white_plus">#ecdfbb</color>
+    <color name="button">#1b1b3f</color>
+    <color name="button_no">#2f2f42</color>
+    <color name="slots">#34231b</color>
+    <color name="button_two">#714f22</color>
+    <color name="slot">#e1cd88</color>
+</resources>

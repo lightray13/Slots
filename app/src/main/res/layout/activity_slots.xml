@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slots_back">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/ll_live"
+                android:padding="2dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/logo_one"/>
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/white_plus"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"
+                android:padding="2dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/logo_two"/>
+                <TextView
+                    android:id="@+id/tv_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/white_plus"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <aaa.bbb.ccc84.SlotsView
+            android:id="@+id/linear_slots"
+            android:layout_width="wrap_content"
+            android:layout_height="271dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/slots"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <aaa.bbb.ccc84.SlotView
+                android:id="@+id/slot_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/slot"
+                android:scrollbars="none" />
+
+            <aaa.bbb.ccc84.SlotView
+                android:id="@+id/slot_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/slot"
+                android:scrollbars="none" />
+
+            <aaa.bbb.ccc84.SlotView
+                android:id="@+id/slot_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/slot"
+                android:scrollbars="none" />
+
+            <aaa.bbb.ccc84.SlotView
+                android:id="@+id/slot_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/slot"
+                android:scrollbars="none" />
+
+            <aaa.bbb.ccc84.SlotView
+                android:id="@+id/slot_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/slot"
+                android:scrollbars="none" />
+        </aaa.bbb.ccc84.SlotsView>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="bottom">
+
+                <Button
+                    android:id="@+id/btn_twist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_twist"
+                    android:textColor="@color/white_plus"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"
+                    android:padding="8dp"
+                    android:text="@string/twist"/>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Project84</string>
+    <string name="slot_machine">Slot machine</string>
+    <string name="play">New game</string>
+    <string name="settings">Settings</string>
+    <string name="rules">Rules</string>
+    <string name="twist">Twist</string>
+    <string name="ok">OK</string>
+    <string name="audio_volume">Audio volume:</string>
+    <string name="win">You are win!</string>
+    <string name="lose">You are lose!</string>
+    <string name="desc">The player needs to collect 100 gold coins before he gets 100 pirate signs. If a player has two pirate symbols, he gets 30 pirate signs, if three pirate symbols - 60 pirate signs and so on.
+        If a player has two symbols of a parrot - he gets 10 pirate signs, if three characters of a parrot - 20 pirate signs and so on.
+        If the player has two symbols of the ship - he receives 30 gold coins, if three symbols of the ship - 60 gold coins and so on.
+        If the player has two symbols of the helm - he receives 10 gold coins, if three symbols of the wheel - 20 gold coins and so on.</string>
+    <string name="back">Return to the menu</string>
+</resources>
